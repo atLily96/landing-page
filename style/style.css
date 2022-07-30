@@ -1,0 +1,124 @@
+/*
+====================================
+    Layout
+====================================
+*/
+
+/*general*/
+
+body{
+    margin: 0px;
+    overflow: auto;
+}
+
+.lateral-space{
+    width: 15vw;
+}
+
+.main-container,
+.hero,
+.information,
+.mantra,
+.sign-up,
+.footer,
+.hero-main-content,
+.hero-header,
+.header-links{
+    display: flex;
+}
+
+.hero,
+.information,
+.mantra,
+.sign-up{
+    height: 80vh;
+    flex:1 0 auto;
+}
+
+/*hero layout*/
+
+.main-container{
+    flex-direction: column;
+}
+
+
+
+.hero-content{
+    flex: 2 1 auto;
+}
+
+.hero-main-content{
+    width:70vw;
+}
+
+.header-links{
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*footer*/
+
+.footer{
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+/*
+====================================
+    Colors, images and fonts
+====================================
+*/
+
+.hero{
+    background: #1f2937;
+}
+
+.information{
+    background: #f0f0f0;
+}
+
+.mantra{
+    background: #e5e7eb;
+}
+
+.sign-up{
+    background: #f0f0f0;
+}
+
+.footer{
+    background:#1f2937;
+    color:#e5e7eb;
+    text-align: center;
+}
+
+.hero-placeholder-image{
+    width: 40vw;
+}
+
+.hero-text{
+    width: 30vw;
+    color: #e5e7eb;
+}
+
+.hero-title{
+    color: #f0f0f0;
+    font-size: 40px;
+}
+
+.hero-description{
+    font-size: 18px;
+}
+
+.placeholder-logo{
+    font: 48px extra-bold;
+    color: #e5e7eb;
+}
+
+a{
+    color: #e5e7eb;
+    text-decoration: none;
+}
