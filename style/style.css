@@ -23,7 +23,10 @@ body{
 .footer,
 .hero-main-content,
 .hero-header,
-.header-links{
+.header-links,
+.information-content,
+.information-samples,
+.sample{
     display: flex;
 }
 
@@ -35,19 +38,23 @@ body{
     flex:1 0 auto;
 }
 
-/*hero layout*/
-
 .main-container{
     flex-direction: column;
 }
 
-
+/*hero layout*/
 
 .hero-content{
+    margin-top: 3vh;
     flex: 2 1 auto;
 }
 
+.hero-header{
+    margin-bottom: 15vh;
+}
+
 .hero-main-content{
+    gap: 2vw;
     width:70vw;
 }
 
@@ -57,6 +64,29 @@ body{
     align-items: center;
     gap: 10px;
 }
+
+/*information layout*/
+
+.information-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2 1 auto;
+}
+
+.information-title{
+    margin-bottom: 10vh;
+}
+
+.information-samples{
+    gap: 3vw;
+}
+
+.sample{
+    flex-direction: column;
+    text-align: center;
+}
+
 
 /*footer*/
 
@@ -73,21 +103,104 @@ body{
 ====================================
 */
 
+/*General*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: #e5e7eb;
+    text-decoration: none;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 1.5vh;
+}
+
+/*Hero*/
+
 .hero{
     background: #1f2937;
 }
+
+.placeholder-logo{
+    font-size: 24px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.header-links{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero-placeholder-image{
+    width: 40vw;
+    height: 40vh;
+}
+
+.hero-text{
+    width: 30vw;
+    height: 40vh;
+    color: #e5e7eb;
+}
+
+.hero-title{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-description{
+    font-size: 18px;
+}
+
+.hero-button{
+    border: 0;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+/*Information*/
 
 .information{
     background: #f0f0f0;
 }
 
+.sample{
+    width: 10vw;
+}
+
+.sample-image{
+    width: 10vw;
+    border: solid 5px #3882f6;
+    border-radius: 15px;
+}
+
+.information-title{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+/*Mantra*/
+
 .mantra{
     background: #e5e7eb;
 }
 
+/*Sign-up*/
+
 .sign-up{
     background: #f0f0f0;
 }
+
+/*Footer*/
 
 .footer{
     background:#1f2937;
@@ -95,30 +208,5 @@ body{
     text-align: center;
 }
 
-.hero-placeholder-image{
-    width: 40vw;
-}
 
-.hero-text{
-    width: 30vw;
-    color: #e5e7eb;
-}
 
-.hero-title{
-    color: #f0f0f0;
-    font-size: 40px;
-}
-
-.hero-description{
-    font-size: 18px;
-}
-
-.placeholder-logo{
-    font: 48px extra-bold;
-    color: #e5e7eb;
-}
-
-a{
-    color: #e5e7eb;
-    text-decoration: none;
-}
